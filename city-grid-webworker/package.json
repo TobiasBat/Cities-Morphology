@@ -1,5 +1,5 @@
 {
-  "name": "city-grid-concurrent",
+  "name": "city-grid-webworker",
   "version": "1.0.0",
   "type": "module",
   "private": true,
