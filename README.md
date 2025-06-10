@@ -26,7 +26,7 @@ This code was created by [Tobias Batik](	http://tobiasbatik.at), and the primary
 -  **city-grid-webworker** in `/city-grid-webworker` provides functionality for creating simulations asynchronously in a web worker. The package should only work for the browser.
 
 + The folder `/travel-distance-experiments` folder contains the node programs to reproduce our experiments on city shapes and travel distance.
-+ The web application **Cities Morphology, located at/cities-morphology, is an interactive visualization that explores different city design paradigms. The application allows users to modify city parameters and displays the resulting city as a three-dimensional model. The visualization can also be accessed under [vis.csh.ac.at/cities-morphology](https://vis.csh.ac.at/cities-morphology) .
++ The web application **Cities Morphology**, located at/cities-morphology, is an interactive visualization that explores different city design paradigms. The application allows users to modify city parameters and displays the resulting city as a three-dimensional model. The visualization can also be accessed under [vis.csh.ac.at/cities-morphology](https://vis.csh.ac.at/cities-morphology) .
 
 <br>
 
