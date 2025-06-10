@@ -1,0 +1,23 @@
+{
+  "name": "compute-shape-of-city",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "variations": "tsc && node --max_old_space_size=14000 dist/variations.js",
+    "vienna": "tsc && node --max_old_space_size=4000 dist/vienna.js",
+    "distance": "tsc && node dist/distance.js"
+  },
+  "keywords": [],
+  "author": "Tobias Batik",
+  "license": "GNU GPL V3.0",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "city-grid": "file:../city-grid"
+  }
+}
