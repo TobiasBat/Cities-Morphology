@@ -1,0 +1,39 @@
+{
+  "name": "morphology-of-cities",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "host": "vite --host"
+  },
+  "dependencies": {
+    "@types/d3": "^7.4.3",
+    "camera-controls": "^2.9.0",
+    "city-grid": "file:../city-grid",
+    "city-grid-webworker": "file:../city-grid-webworker",
+    "d3": "^7.9.0",
+    "gl-matrix": "^3.4.3",
+    "graphology": "^0.25.4",
+    "graphology-shortest-path": "^2.1.0",
+    "three": "^0.165.0",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.5",
+    "@types/three": "^0.165.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^6.2.0",
+    "typescript": "~5.4.0",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.0.21"
+  }
+}

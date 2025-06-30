@@ -1,0 +1,117 @@
+:root {
+  --font-family: "tt-commons-pro", sans-serif;
+  --color-text: rgb(0, 0, 0);
+  --color-text-shade1: rgb(105, 105, 105);
+  --color-text-shade2: rgb(167, 167, 167);
+  --color-text-shade3: rgb(220, 220, 220);
+  --font-size: 1.0rem;
+  --font-size-text: 1.1rem;
+  --line-height: 1.2;
+  --font-size-note: 0.8rem;
+  --font-size-large: 24px;
+  --bg-color: rgb(250, 250, 250);
+  --bg-color2: rgb(240, 240, 240);
+  --bg-color3: rgb(150, 150, 150);
+
+  --element-shadow: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.05));
+  --element-shadow-small: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.1));
+  --element-shadow-light: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.05));
+
+  --nav-width: 50px;
+
+  --icon-filter: invert(0%);
+  --icon-filter-inverted: invert(100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: rgb(200, 200, 200);
+    --bg-color: rgb(30, 30, 30);
+    --bg-color2: rgb(40, 40, 40);
+    --element-shadow: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.02));
+    --element-shadow-small: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.4));
+
+    --icon-filter: invert(100%);
+    --icon-filter-inverted: invert(0%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --font-size: 0.9rem;
+    --font-size-text: 0.9rem;
+    --font-size-large: 20px;
+    --nav-width: 40px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  :root {
+    --font-size-text: 1.4rem;
+    --font-size-large: 1.8rem;
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--bg-color);
+}
+
+html {
+  font-size: 100%;
+  scrollbar-color: var(--color-text);
+  scrollbar-width: thin;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-shade1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-shade1);
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-block-end: calc(var(--font-size-large) * 2);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+  font-weight: 400;
+  line-height: calc(var(--font-size-large) * 1.5);
+  margin-block-start: calc(var(--font-size-large) * 3);
+  margin-block-end: calc(var(--font-size-large) * 0.5);
+}
+
+p {
+  margin-block-end: calc(var(--font-size-text) * 1.1);
+  hyphens: auto;
+  font-weight: 400;
+  text-align: justify;
+  font-size: var(--font-size-text);
+}
