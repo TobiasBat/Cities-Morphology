@@ -11,7 +11,15 @@ This repository contains two packages for generating city layouts based on high-
 In case you use any of the code in this repository in any way, including screenshots of the visualization, please cite: 
 
 ```tex
-TODO
+@misc{batik2025bestshapecity,
+      title={What is the best shape of a city}, 
+      author={Tobias Batik and Guillermo Prieto-Viertel and Jiaqi Liang and Liuhuaying Yang and Dániel Kondor and Rafael Prieto-Curiel},
+      year={2025},
+      eprint={2507.00100},
+      archivePrefix={arXiv},
+      primaryClass={physics.soc-ph},
+      url={https://arxiv.org/abs/2507.00100}, 
+}
 ```
 
 and link to [https://vis.csh.ac.at/cities-morphology](https://vis.csh.ac.at/cities-morphology) . 
